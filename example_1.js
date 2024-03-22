@@ -1,4 +1,4 @@
-function cookSteakImperative(steakWeight, desiredDoneness) {
+function cookSteak(steakWeight, desiredDoneness) {
     let grillTemperature = 0;
     let steakTemperature = 0;
     
@@ -21,12 +21,14 @@ function cookSteakImperative(steakWeight, desiredDoneness) {
     // Step 4: Serve the steak
     if (steakTemperature >= desiredDoneness) {
       return 'Steak is ready to serve!';
-    } else {
+    } else { 
       return 'Steak needs more cooking.';
     }
   }
   
   // Usage example:
-  const result = cookSteakImperative(16, 63); // Cook a 16 oz steak to medium-rare (63°C)
+  const result = cookSteak(16, 63); // Cook a 16 oz steak to medium-rare (63°C)
   console.log(result);
   
+  // Imperative approach as it gives clear step by step instructions on what to do
+  //
